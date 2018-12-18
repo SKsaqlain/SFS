@@ -48,7 +48,7 @@ $./start.sh
  $chmod 777 test.sh
  $./test.sh
  ```
- To run the commands with out the start.sh file <br/>Run teh below commands
+ To run the commands with out the start.sh fileRun the below commands<br/>
  Create a Mount point
  ```
  $mkdir fs1
@@ -74,7 +74,6 @@ $./start.sh
  ```
  $fusermount -u [MOUNT-POINT]
  ```
- <br/>
 To unmount fs1.
  ```
  $fusermount -u fs1
