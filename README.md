@@ -43,7 +43,7 @@ $chmod 777 start.sh
 $./start.sh
 ```
  
- To test it run teh below command
+ Run the test.sh script to create some files and folders for testing purpose
  ```
  $chmod 777 test.sh
  $./test.sh
@@ -53,3 +53,5 @@ $./start.sh
  $fusermount -u [MOUNT-POINT]
  ```
   
+  ## License
+This project is licensed under the [MIT License](LICENSE.md)
