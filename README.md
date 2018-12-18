@@ -6,7 +6,7 @@ This project was carried out as a part of "Introduction to Operating Systems" co
 File system provides a means of storage and retrieval of data from and to the disk. It determines how the data is stored and performs several other functions like creating files, directories, updating the contents of a file or directories and various other options such as deleting the contents of file and directories.
 
 ## Fuse.
-FUSE (File system in user space) is an software that lets non - privilege users create their own file system without editing the kernel code. Thus FUSE allows users to create a file system on top a actual file system. 
+FUSE (File system in user space) is an software that lets non - privilege users create their own file system without editing the kernel code. Thus FUSE allows users to create a file system on top of an actual file system. 
 
 
 
@@ -48,10 +48,36 @@ $./start.sh
  $chmod 777 test.sh
  $./test.sh
  ```
+ To run the commands with out the start.sh file <br/>Run teh below commands
+ Create a Mount point
+ ```
+ $mkdir fs1
+ ```
+ Run the make file
+ ```
+ $make -f SFS.make
+ ```
+ Mount the File System in the Foreground mode.
+ ```
+ $./sfs -f fs1
+ ```
+ To create some file or directories cd to the mount-point.
+ ```
+ $cd fs1
+ $mkdir testfolder
+ ```
+ To come out of the file system.
+ ```
+ cd ..
+ ```
  To unmount the file system.
  ```
  $fusermount -u [MOUNT-POINT]
  ```
-  
-  ## License
+ <br/>
+To unmount fs1.
+ ```
+ $fusermount -u fs1
+ ```
+ ## License
 This project is licensed under the [MIT License](LICENSE.md)
